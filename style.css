@@ -204,26 +204,37 @@ header .subtitle { font-style: italic; color: #666; font-size: 0.9rem; margin-to
 
 /* --- OPTION 7: SLIDE REVEAL (FIXED) --- */
 .card-7 {
-    height: 350px; 
-    border-radius: 8px; 
+    height: 350px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
-    overflow: hidden; /* This prevents the text from bleeding out */
-    position: relative; /* Ensures elements inside stay positioned relative to this box */
+    position: relative;
+    overflow: hidden; /* This cuts off the text spilling out */
 }
 
-/* Keep the rest of the card-7 CSS the same */
-.card-7 img { transition: 0.5s; }
+/* The rest of the styling stays the same */
+.card-7 img { transition: 0.5s; width: 100%; height: 100%; object-fit: cover; }
+
 .card-7 .card-details {
-    position: absolute; bottom: 0; left: 0; width: 100%;
-    background: linear-gradient(to top, var(--sangli-maroon), transparent);
-    padding: 20px; color: white;
-    transform: translateY(60px); transition: 0.5s;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    /* Made the gradient slightly stronger/taller so text is readable */
+    background: linear-gradient(to top, var(--sangli-maroon) 20%, transparent); 
+    padding: 20px;
+    padding-bottom: 30px; /* EXTRA PADDING: Lifts the text up from the bottom edge */
+    color: white;
+    transform: translateY(40px); /* CHANGED: Reduced from 60px to 40px so text stays visible */
+    transition: 0.5s;
 }
+
 .card-7 button {
     margin-top: 10px; opacity: 0;
     background: white; color: var(--sangli-maroon); border: none;
     padding: 5px 15px; border-radius: 4px; cursor: pointer;
 }
+
+/* Hover Effects */
 .card-7:hover img { transform: scale(1.1); }
 .card-7:hover .card-details { transform: translateY(0); background: rgba(128, 0, 32, 0.95); }
 .card-7:hover button { opacity: 1; }
