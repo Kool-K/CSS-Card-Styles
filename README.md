@@ -10,6 +10,7 @@
 
 ## 📖 About The Project
 
+View cards here [Visit](https://kool-k.github.io/CSS-Card-Styles/)
 As a freelancer, explaining "design vibes" to a client can be difficult. Do they want **Minimalist**? **Royal**? **Glassmorphism**?
 
 This repository provides a **ready-to-deploy gallery of 25 distinct card styles**. You can upload this to GitHub Pages, send the link to your client, and let them choose the exact elements they like (for example:  
