@@ -10,7 +10,7 @@
 
 ## 📖 About The Project
 
-View cards[here](https://kool-k.github.io/CSS-Card-Styles/)
+View cards [here](https://kool-k.github.io/CSS-Card-Styles/)
 
 As a freelancer, explaining "design vibes" to a client can be difficult. Do they want **Minimalist**? **Royal**? **Glassmorphism**?
 
