@@ -1212,6 +1212,679 @@ header .subtitle { font-style: italic; color: #666; font-size: 0.9rem; margin-to
 .color-swatch code { font-size: 0.7rem; opacity: 0.8; margin-top: 5px; }
 
 
+/* --- CARD 27: THE SPLIT SCREEN --- */
+.card-27 {
+    display: flex;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--white);
+}
+.card-27 .split-left {
+    flex: 1;
+    overflow: hidden;
+}
+.card-27 .split-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.card-27:hover .split-left img {
+    transform: scale(1.1);
+}
+.card-27 .split-right {
+    flex: 1;
+    background: linear-gradient(135deg, var(--heritage-cream) 0%, var(--white) 100%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+.card-27 .category-tag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--temple-gold-dark);
+    font-weight: 700;
+    border-bottom: 2px solid var(--temple-gold);
+    padding-bottom: 3px;
+}
+.card-27 h3 {
+    color: var(--sangli-maroon);
+    font-size: 1.8rem;
+    margin: 0;
+}
+.card-27 .price {
+    color: var(--charcoal);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.card-27 .minimal-btn {
+    background: var(--sangli-maroon);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    margin-top: auto;
+}
+.card-27 .minimal-btn:hover {
+    background: var(--temple-gold-dark);
+    transform: rotate(45deg);
+}
+
+/* --- CARD 28: THE BADGE COLLECTOR --- */
+.card-28 {
+    background: var(--heritage-cream);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+.card-28:hover {
+    transform: translateY(-8px);
+}
+.card-28 .card-img {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+.card-28 .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-28 .badge-group {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card-28 .badge {
+    background: rgba(128, 0, 32, 0.95);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.card-28 .card-details {
+    padding: 20px;
+    text-align: center;
+}
+.card-28 h3 {
+    color: var(--sangli-maroon);
+    margin-bottom: 8px;
+}
+.card-28 p {
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.card-28 button {
+    background: var(--temple-gold);
+    color: var(--charcoal);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.card-28 button:hover {
+    background: var(--sangli-maroon);
+    color: white;
+}
+
+/* --- CARD 29: THE SLIDER PREVIEW --- */
+.card-29 {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.card-29 .carousel-container {
+    position: relative;
+    height: 260px;
+    background: var(--heritage-cream);
+}
+.card-29 .carousel-img {
+    height: 100%;
+    overflow: hidden;
+}
+.card-29 .carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+}
+.card-29:hover .carousel-img img {
+    opacity: 0.9;
+}
+.card-29 .carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+.card-29 .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.card-29 .dot.active {
+    background: var(--sangli-maroon);
+    width: 24px;
+    border-radius: 4px;
+}
+.card-29 .card-details {
+    padding: 20px;
+    text-align: center;
+}
+.card-29 h3 {
+    color: var(--sangli-maroon);
+    margin-bottom: 15px;
+}
+.card-29 button {
+    background: transparent;
+    color: var(--sangli-maroon);
+    border: 2px solid var(--sangli-maroon);
+    padding: 10px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.card-29 button:hover {
+    background: var(--sangli-maroon);
+    color: white;
+}
+
+/* --- CARD 30: THE REFLECTION --- */
+.card-30 {
+    background: var(--charcoal);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 20px 20px 15px;
+}
+.card-30 .reflection-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+.card-30 .main-img {
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-30 .main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-30 .reflected-img {
+    height: 80px;
+    overflow: hidden;
+    margin-top: 2px;
+    border-radius: 0 0 8px 8px;
+    opacity: 0.3;
+    transform: scaleY(-1);
+}
+.card-30 .reflected-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transform: translateY(-140px);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 100%);
+}
+.card-30 .card-details {
+    text-align: center;
+    padding: 0 10px 10px;
+}
+.card-30 h3 {
+    color: var(--temple-gold);
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+.card-30 p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.card-30 button {
+    background: var(--temple-gold);
+    color: var(--charcoal);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.card-30 button:hover {
+    background: var(--white);
+    transform: scale(1.05);
+}
+
+/* --- CARD 31: THE MAGAZINE COVER --- */
+.card-31 {
+    background: var(--white);
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    height: 450px;
+}
+.card-31 .magazine-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.card-31 .magazine-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-31 .magazine-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(128, 0, 32, 0.85) 100%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-31 .mag-header {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--temple-gold);
+    font-weight: 700;
+    border-bottom: 1px solid var(--temple-gold);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.card-31 h2 {
+    font-size: 3rem;
+    color: white;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.card-31 .mag-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-31 .mag-footer span {
+    color: var(--heritage-cream);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+.card-31 .read-btn {
+    background: var(--temple-gold);
+    color: var(--charcoal);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+.card-31 .read-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* --- TEXT CARD 22: THE PROGRESS TRACKER --- */
+.text-card-22 {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--sangli-maroon);
+}
+.text-card-22 h3 {
+    color: var(--sangli-maroon);
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+.text-card-22 .progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.text-card-22 .progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 12%;
+    right: 12%;
+    height: 2px;
+    background: #ddd;
+    z-index: 0;
+}
+.text-card-22 .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+}
+.text-card-22 .step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border: 3px solid #eee;
+    transition: all 0.3s;
+}
+.text-card-22 .step.completed .step-circle {
+    background: var(--sangli-maroon);
+    color: white;
+    border-color: var(--sangli-maroon);
+}
+.text-card-22 .step.active .step-circle {
+    background: var(--temple-gold);
+    color: var(--charcoal);
+    border-color: var(--temple-gold);
+    animation: pulse 2s infinite;
+}
+.text-card-22 .step span {
+    font-size: 0.75rem;
+    color: var(--charcoal);
+    font-weight: 600;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* --- TEXT CARD 23: THE REVIEW CARD --- */
+.text-card-23 {
+    background: var(--heritage-cream);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+.text-card-23:hover {
+    transform: translateY(-5px);
+}
+.text-card-23 .stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.text-card-23 .stars i {
+    color: var(--temple-gold);
+    font-size: 1.1rem;
+}
+.text-card-23 .review-text {
+    color: var(--charcoal);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--temple-gold);
+    padding-left: 15px;
+}
+.text-card-23 .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.text-card-23 .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--sangli-maroon);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.text-card-23 .reviewer-info {
+    display: flex;
+    flex-direction: column;
+}
+.text-card-23 .reviewer-info strong {
+    color: var(--sangli-maroon);
+    font-size: 0.95rem;
+}
+.text-card-23 .reviewer-info span {
+    color: var(--temple-gold-dark);
+    font-size: 0.8rem;
+}
+
+/* --- TEXT CARD 24: THE TIMELINE EVENT --- */
+.text-card-24 {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    position: relative;
+    padding-left: 45px;
+}
+.text-card-24 .timeline-marker {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--temple-gold);
+    border: 3px solid var(--sangli-maroon);
+}
+.text-card-24 .timeline-marker::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100px;
+    background: var(--temple-gold);
+    opacity: 0.3;
+}
+.text-card-24 .event-date {
+    font-size: 0.75rem;
+    color: var(--temple-gold-dark);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.text-card-24 h3 {
+    color: var(--sangli-maroon);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.text-card-24 p {
+    color: var(--charcoal);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.text-card-24 .link-style {
+    background: none;
+    border: none;
+    color: var(--sangli-maroon);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.text-card-24 .link-style:hover {
+    color: var(--temple-gold-dark);
+}
+
+/* --- TEXT CARD 25: THE ACHIEVEMENT BADGE --- */
+.text-card-25 {
+    background: linear-gradient(135deg, var(--sangli-maroon) 0%, var(--sangli-maroon-dark) 100%);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(128, 0, 32, 0.3);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.text-card-25::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(192, 178, 131, 0.1) 0%, transparent 70%);
+}
+.text-card-25 .achievement-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--temple-gold);
+    color: var(--charcoal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+.text-card-25 h3 {
+    color: var(--temple-gold);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+.text-card-25 .achievement-desc {
+    color: var(--heritage-cream);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+.text-card-25 .certificate-seal {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--temple-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.text-card-25 .certificate-seal span {
+    color: var(--temple-gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- TEXT CARD 26: THE CALL-TO-ACTION --- */
+.text-card-26 {
+    background: linear-gradient(135deg, var(--temple-gold) 0%, var(--temple-gold-dark) 100%);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(192, 178, 131, 0.4);
+    text-align: center;
+}
+.text-card-26 .cta-content h2 {
+    color: var(--sangli-maroon);
+    font-size: 2rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.text-card-26 .cta-subtext {
+    color: var(--charcoal);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+.text-card-26 .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.text-card-26 .time-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.text-card-26 .time-box .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--sangli-maroon);
+    line-height: 1;
+}
+.text-card-26 .time-box .unit {
+    font-size: 0.7rem;
+    color: var(--charcoal);
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.text-card-26 .cta-button {
+    background: var(--sangli-maroon);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 5px 15px rgba(128, 0, 32, 0.3);
+    transition: all 0.3s;
+}
+.text-card-26 .cta-button:hover {
+    background: var(--charcoal);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(128, 0, 32, 0.4);
+}
+
+
 /* --- FOOTER STYLES --- */
 footer {
     text-align: center;
