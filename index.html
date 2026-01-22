@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sangli Creations - Design Gallery</title>
+        <title>Sangli Creations - Design System</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -13,8 +13,11 @@
     <body>
         <header>
             <h1>Sangli Creations</h1>
-            <p>Card Design Concepts</p>
-            <p class="subtitle">Browse the collection below. Take a screenshot of your favorites to discuss.</p>
+            <p>Design System & Component Library</p>
+            <div class="nav-tabs">
+                <button class="tab-btn active" onclick="switchTab('image')">Image Cards</button>
+                <button class="tab-btn" onclick="switchTab('text')">Text-Only Cards</button>
+            </div>
         </header>
         <div class="palette-container">
             <div class="color-swatch" style="background-color: #800020;">
@@ -34,7 +37,7 @@
                 <code>#333333</code>
             </div>
         </div>
-        <div class="gallery-container">
+        <div id="image-gallery" class="gallery-container">
             <div class="card-wrapper">
                 <span class="label">1. The Minimalist</span>
                 <div class="card card-1">
@@ -379,12 +382,330 @@
                     </div>
                 </div>
             </div>
+            <div class="card-wrapper">
+                <span class="label">26. App Store Editorial</span>
+                <div class="card card-26">
+                    <div class="content-overlay">
+                        <span class="eyebrow">FEATURED</span>
+                        <h3>
+                            The Brass
+                            <br>
+                            Revival
+                        </h3>
+                        <p>Why vintage decor is trending.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-gallery" class="gallery-container" style="display: none;">
+            <div class="card-wrapper">
+                <span class="label">T1. The Royal Quote</span>
+                <div class="card text-card-1">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p>"Authenticity is the soul of our tradition."</p>
+                    <div class="author">- Sangli Creations</div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T2. The Vintage Ticket</span>
+                <div class="card text-card-2">
+                    <div class="ticket-left">
+                        <h3>Sale</h3>
+                        <p>50% Off</p>
+                    </div>
+                    <div class="ticket-right">
+                        <div class="barcode">||||||||||</div>
+                        <button>Claim</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T3. The Dark Plaque</span>
+                <div class="card text-card-3">
+                    <div class="border-inset">
+                        <h3>
+                            Premium
+                            <br>
+                            Quality
+                        </h3>
+                        <div class="divider">✦</div>
+                        <p>Certified Authentic Brass</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T4. The Info List</span>
+                <div class="card text-card-4">
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Handpicked Items
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Heritage Verified
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Global Shipping
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T5. The Notification</span>
+                <div class="card text-card-5">
+                    <div class="icon-box">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="text-content">
+                        <h4>New Arrivals</h4>
+                        <p>Check out our latest festive collection.</p>
+                    </div>
+                    <button>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T6. The Paper Note</span>
+                <div class="card text-card-6">
+                    <div class="tape"></div>
+                    <h3>Care Instructions</h3>
+                    <p>Clean with a soft, dry cloth. Do not use abrasive chemicals on antique brass.</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T7. The Gradient Border</span>
+                <div class="card text-card-7">
+                    <div class="inner-box">
+                        <h3>Join the Family</h3>
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T8. The Big Stat</span>
+                <div class="card text-card-8">
+                    <h2>500+</h2>
+                    <p>Artifacts Sold</p>
+                    <div class="stat-bar"></div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T9. The Postage Stamp</span>
+                <div class="card text-card-9">
+                    <div class="stamp-border">
+                        <img src="https://via.placeholder.com/50/800020/FFFFFF?text=S" alt="Logo" class="mini-logo">
+                        <h3>Handmade</h3>
+                        <p>Since 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T10. The Hover Menu</span>
+                <div class="card text-card-10">
+                    <a href="#">
+                        <span>01.</span>
+                        Home Decor
+                    </a>
+                    <a href="#">
+                        <span>02.</span>
+                        Vintage Idols
+                    </a>
+                    <a href="#">
+                        <span>03.</span>
+                        Textiles
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T11. The iOS Widget</span>
+                <div class="card text-card-11">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-store icon-bg"></i>
+                        <span>Sangli</span>
+                    </div>
+                    <h3>New Collection Live</h3>
+                    <p>Tap to browse 50+ items.</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T12. The Loyalty Card</span>
+                <div class="card text-card-12">
+                    <div class="card-top">
+                        <span class="brand-name">Sangli Club</span>
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="chip">
+                        <div class="chip-line"></div>
+                        <div class="chip-line"></div>
+                        <div class="chip-line"></div>
+                        <div class="chip-line"></div>
+                    </div>
+                    <div class="card-number">
+                        <span>****</span>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="holder-info">
+                            <span class="label">MEMBER</span>
+                            <span class="value">PRIORITY</span>
+                        </div>
+                        <div class="logo-mark">SC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T13. The Settings Menu</span>
+                <div class="card text-card-13">
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="icon square-gold">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <span>Orders</span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
+                        </div>
+                        <div class="list-item">
+                            <div class="icon square-maroon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <span>Wishlist</span>
+                            <i class="fa-solid fa-chevron-right arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T14. Glass Notification</span>
+                <div class="card text-card-14">
+                    <div class="glass-box">
+                        <div class="notif-header">
+                            <small>MESSAGES &bull; NOW</small>
+                        </div>
+                        <p>
+                            <strong>Sangli Creations</strong>
+                            <br>
+                            Your order #402 has been shipped!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T15. The Chat Bubble</span>
+                <div class="card text-card-15">
+                    <div class="bubble received">
+                        Do you have this in copper?
+                    </div>
+                    <div class="bubble sent">
+                        Yes! It's available now.
+                        <span class="seen">Read 10:45 AM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T16. The Tag Cloud</span>
+                <div class="card text-card-16">
+                    <h3>Browse By</h3>
+                    <div class="tags-container">
+                        <span class="pill">#Vintage</span>
+                        <span class="pill">#Brass</span>
+                        <span class="pill">#Handmade</span>
+                        <span class="pill active">#Decor</span>
+                        <span class="pill">#Gift</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T17. The Mesh Gradient</span>
+                <div class="card text-card-17">
+                    <h3>
+                        Summer
+                        <br>
+                        Sale
+                    </h3>
+                    <p>Up to 40% off on all brass items.</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T18. The Brand Watermark</span>
+                <div class="card text-card-18">
+                    <div class="watermark">SANGLI</div>
+                    <div class="content">
+                        <h3>Heritage</h3>
+                        <p>Preserving the art of Indian craftsmanship since 2020.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T19. Soft Pressed</span>
+                <div class="card text-card-19">
+                    <div class="inner-pressed">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>Premium Quality</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T20. Swiss Bold</span>
+                <div class="card text-card-20">
+                    <div class="top-row">
+                        <span>EST.</span>
+                        <span>2024</span>
+                    </div>
+                    <h2>
+                        ART
+                        <br>
+                        DECOR
+                    </h2>
+                    <div class="bottom-row">
+                        <button>VIEW</button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <span class="label">T21. The Live Status</span>
+                <div class="card text-card-21">
+                    <div class="status-dot"></div>
+                    <div class="status-text">
+                        <h3>Orders Open</h3>
+                        <p>We are currently accepting custom requests.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
-            <p>Designed & Developed by
+            <p>
+                Designed & Developed by
                 <a href="https://kool-k.github.io/Ketaki_Kulkarni_Portfolio/" target="_blank">Ketaki Kulkarni</a>
             </p>
             <p class="tiny">Open Source Design System for Sangli Creations</p>
         </footer>
+        <script>
+        function switchTab(tabName) {
+            // Hide all galleries
+            document.getElementById('image-gallery').style.display = 'none';
+            document.getElementById('text-gallery').style.display = 'none';
+            
+            // Remove active class from buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected gallery and active button
+            if (tabName === 'image') {
+                document.getElementById('image-gallery').style.display = 'grid';
+                buttons[0].classList.add('active');
+            } else {
+                document.getElementById('text-gallery').style.display = 'grid';
+                buttons[1].classList.add('active');
+            }
+        }
+        </script>
     </body>
 </html>
